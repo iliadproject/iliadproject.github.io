@@ -10,15 +10,45 @@ Iliad is not a traditional web framework. Heavily based on reusable stateful wid
 
 Iliad allows you to trigger Smalltalk code when an user clicks on a link or submit a form instead of bothering you with low level details. Thanks to its JavaScript layer Iliad automatically uses AJAX requests to update the client state, and it will nicely degrade to normal requests if javascript is not enabled, so you don't have to bother about that either.
 
+# Download
+
+Iliad pre-loaded images can be downloaded from the following links:
+
+- Latest Iliad bleeding edge (Pharo 5.0)
+- Latest Iliad bleeding edge (Pharo 6.0)
+- Latest Iliad stable (Pharo 5.0)
+- Latest Iliad stable (Pharo 6.0) 
+
+
+# Installation
+
+To install the Iliad stable version in a Pharo Smalltalk environment, evaluate:
+
+```smalltalk
+Metacello new
+    smalltalkhubUser: 'hernan' project: 'Iliad';
+    configuration: 'Iliad';
+    version: #stable;
+    load
+```
+
+To install the Iliad "bleeding edge" version in a Pharo Smalltalk environment, evaluate:
+
+```smalltalk
+Metacello new
+    smalltalkhubUser: 'hernan' project: 'Iliad';
+    configuration: 'Iliad';
+    version: #stable;
+    load
+```
+
 # Documentation
 
-Iliad's documentation is evolving. We encourage newcomers to start with the ![](http://web.archive.org/web/20130618134016/http://www.iliadproject.org:80/pages/Documentation/Getting-started). We are looking for contributors to help us improve this documentation.
+Iliad's documentation is evolving. We encourage newcomers to start with the [basic tutorial](http://web.archive.org/web/20130618134016/http://www.iliadproject.org:80/pages/Documentation/Getting-started). We are looking for contributors to help us improve this documentation.
 
 If you can't find what you're looking for in the documentation, you can post an email on the [mailing list](http://groups.google.com/group/iliad).
 
 # Community
-
-Iliad was created in 2008 by Nicolas Petton and Sébastien Audier. Since the first public release of Iliad, they receive help from the Smalltalk community
 
 ## Mailing list
 
