@@ -14,11 +14,9 @@ Iliad allows you to trigger Smalltalk code when an user clicks on a link or subm
 
 Iliad pre-loaded images can be downloaded from the following links:
 
-- Latest Iliad bleeding edge (Pharo 5.0)
-- Latest Iliad bleeding edge (Pharo 6.0)
-- Latest Iliad stable (Pharo 5.0)
-- Latest Iliad stable (Pharo 6.0) 
-
+- [Iliad stable Pharo 5.0](https://github.com/iliadproject/iliadproject.github.io/raw/master/files/iliad_stable-pharo5.0.zip)
+- [Iliad stable Pharo 6.0](https://github.com/iliadproject/iliadproject.github.io/raw/master/files/iliad_stable-pharo6.0.zip)
+- [Iliad bleeding edge Pharo 6.0](https://github.com/iliadproject/iliadproject.github.io/raw/master/files/iliad_dev-pharo6.0.zip)
 
 # Installation
 
@@ -67,8 +65,12 @@ Submit bug reports to the [issue tracker](https://github.com/iliadproject/iliadp
 
 ## Pharo maintainers
 
+- Benoit Astruc
+- Hernán Morales Durand
 - Steven Costiou
-- Contributors (By alphabetical order)
+
+## Contributors (By alphabetical order)
+
 - Bernat Romagosa
 - Bèrto ëd Sèra
 - Canol Gökel
@@ -76,7 +78,6 @@ Submit bug reports to the [issue tracker](https://github.com/iliadproject/iliadp
 - Germán Arduino
 - Göran Krampe
 - Gwenael Casaccio
-- Hernán Morales Durand
 - Janko Mivšek
 - Joachim Jaeckel
 - Paolo Bonzini
