@@ -1,6 +1,6 @@
 # Iliad Web Framework
 
-Iliad is not a traditional web framework. Heavily based on reusable stateful widgets, Iliad lets you build powerful dynamic applications easily. Iliad was designed around tight integration between Javascript components on the client and Smalltalk components on the server. It has the following main features:
+Iliad is a web framework for Smalltalk, an object-oriented, dynamically typed, reflective programming language. Iliad is heavily based on reusable stateful widgets, Iliad lets you build powerful dynamic applications easily. Iliad was designed around tight integration between Javascript components on the client and Smalltalk components on the server. It has the following main features:
 
 - AJAX is completely transparent, no need to write JavaScript code.
 - Includes a Formula package which makes it easy to build validated forms.
@@ -36,15 +36,35 @@ To install the Iliad "bleeding edge" version in a Pharo Smalltalk environment, e
 Metacello new
     smalltalkhubUser: 'hernan' project: 'Iliad';
     configuration: 'Iliad';
-    version: #stable;
+    version: #bleedingEdge;
     load
 ```
+
+# Screenshots
+
+Iliad Control Panel
+![Iliad Control Panel](images\screenshot_1.jpg){ width=50% }
+
+Iliad Application Browser
+![Iliad Application Browser](images\screenshot_2.jpg){ width=50% }
+
+Iliad Sessions Browser
+![Iliad Sessions Browser](images\screenshot_3.jpg){ width=50% }
 
 # Documentation
 
 Iliad's documentation is evolving. We encourage newcomers to start with the [basic tutorial](http://web.archive.org/web/20130618134016/http://www.iliadproject.org:80/pages/Documentation/Getting-started). We are looking for contributors to help us improve this documentation.
 
 If you can't find what you're looking for in the documentation, you can post an email on the [mailing list](http://groups.google.com/group/iliad).
+
+## Key Concepts
+
+In Iliad you write source code in pure Smalltalk, re-using application code with widgets and subclassing framework classes. When an user access a web page, then valid (X)HTML is generated and sent to the client using elements. 
+
+As with most web server frameworks, you start by subclassing one of the main classes (most of the times, ) and then write "controller methods" which are used to dispatch requests to stateful widgets.
+
+When the user intracts with widgets, they will be updated with AJAX requests.
+Controllers are oftenly used to get a domain object from the request's url, and store it in the application.
 
 # Community
 
@@ -58,17 +78,6 @@ Iliad was developed initially under [GNU Smalltalk](http://smalltalk.gnu.org/ "G
 
 Submit bug reports to the [issue tracker](https://github.com/iliadproject/iliadproject.github.io/issues).
 
-## Core developpers
-
-- Nicolas Petton
-- Sébastien Audier
-
-## Pharo maintainers
-
-- Benoit Astruc
-- Hernán Morales Durand
-- Steven Costiou
-
 ## Contributors (By alphabetical order)
 
 - Bernat Romagosa
@@ -80,9 +89,17 @@ Submit bug reports to the [issue tracker](https://github.com/iliadproject/iliadp
 - Gwenael Casaccio
 - Janko Mivšek
 - Joachim Jaeckel
+- Nicolas Petton
 - Paolo Bonzini
+- Sébastien Audier
 - Stefan Schmiedl
 - Tony Fleig
+
+## Pharo maintainers
+
+- Benoit Astruc
+- Hernán Morales Durand
+- Steven Costiou
 
 # MIT Licence
 
