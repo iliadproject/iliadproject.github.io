@@ -43,13 +43,13 @@ Metacello new
 # Screenshots
 
 Iliad Control Panel
-![Iliad Control Panel](images\screenshot_1.jpg){ width=50% }
+![Iliad Control Panel](images\screenshot_1.jpg)
 
 Iliad Application Browser
-![Iliad Application Browser](images\screenshot_2.jpg){ width=50% }
+![Iliad Application Browser](images\screenshot_2.jpg)
 
 Iliad Sessions Browser
-![Iliad Sessions Browser](images\screenshot_3.jpg){ width=50% }
+![Iliad Sessions Browser](images\screenshot_3.jpg)
 
 # Documentation
 
@@ -59,9 +59,9 @@ If you can't find what you're looking for in the documentation, you can post an 
 
 ## Key Concepts
 
-In Iliad you write source code in pure Smalltalk, re-using application code with widgets and subclassing framework classes. When an user access a web page, then valid (X)HTML is generated and sent to the client using elements. 
+In Iliad you write source code in pure Smalltalk, re-using application code with widgets (**ILWidget**) and subclassing framework classes. When an user access a web page, then valid (X)HTML is generated and sent to the client using "elements" (**ILElement**) - objects able to print themselves as (X)HTML. 
 
-As with most web server frameworks, you start by subclassing one of the main classes (most of the times, ) and then write "controller methods" which are used to dispatch requests to stateful widgets.
+As with most web server frameworks, you start by subclassing one of the main classes (most of the times, **ILApplication**) and then write "controller methods" which are used to dispatch requests to stateful widgets. The framework handle sessions and applications. Each session stores one instance of the same application class.
 
 When the user intracts with widgets, they will be updated with AJAX requests.
 Controllers are oftenly used to get a domain object from the request's url, and store it in the application.
